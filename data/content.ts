@@ -189,7 +189,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "g4",
     category: "Traditional",
-    image: "/doc/t1.jpg",
+    image: "/doc/t1.JPG",
   },
   {
     id: "g5",
@@ -245,7 +245,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "g15",
     category: "Pre-Wedding",
-    image: "/doc/p8.jpg",
+    image: "/doc/p8.JPG",
   },
   {
     id: "g16",
