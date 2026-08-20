@@ -25,13 +25,13 @@ export default function ServicesPage() {
       <section className="bg-[#1a1c1c] text-white py-24 px-6 md:px-20 text-center">
         <div className="max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase tracking-[0.3em] text-[#C8A96A] font-semibold">
-            Bespoke Offerings
+            Visual Story Telling
           </span>
           <h1 className="font-serif text-4xl md:text-6xl tracking-tight">
-            Our Luxury Visual Services
+            Our Services
           </h1>
           <p className="text-xs md:text-sm text-[#cfc4c5] font-light leading-relaxed max-w-xl mx-auto uppercase tracking-[0.15em] pt-2">
-            Tailored visual storytelling for discerning individuals, royal families, and global luxury brands.
+            Every moment tells a story,We’re here to capture yours,through our vision and lens.
           </p>
         </div>
       </section>

@@ -20,19 +20,22 @@ export interface ServiceDetail {
 
 export const SITE_METADATA = {
   name: "Sreeram Creations",
-  tagline: "Artistic. Timeless. Exclusive.",
+  tagline: "Make Your Moments Magical",
   headline: "Luxury Photography & Cinematography",
   phone: "+91 9294053749",
   email: "sreeram.creations19@gmail.com",
-  location: "Available All Over South India",
-  instagram: "@sreeramcreations.official",
+  location: "Madanapalle",
+  instagram: "@sreeram.creations",
+  instagramUrl: "https://www.instagram.com/sreeram.creations/",
+  youtube: "@SreeramCreations",
+  youtubeUrl: "https://www.youtube.com/@SreeramCreations",
 };
 
 export const HERO_SLIDES = [
   {
     image: "/images/hero1.jpg",
     title: "Sreeram Creations",
-    subtitle: "Artistic. Timeless. Exclusive.",
+    subtitle: "Make Your Moments Magical",
     caption: "High-End Luxury Wedding Ceremony",
   },
   {
@@ -69,7 +72,7 @@ export const SERVICES: ServiceDetail[] = [
     heroImage: "/images/PBR00927.jpg",
     tagline: "Where love stories meet architectural grandeur and high-fashion aesthetics.",
     description: "Our pre-wedding shoots are conceived as bespoke fashion editorials. We curate exotic locations, styling palettes, and lighting setups to frame your bond in timeless elegance.",
-     gallery: [
+    gallery: [
       "/images/DSC09764.JPG",
       "/doc/p4.jpg",
       "/images/D1.jpg",
@@ -77,7 +80,7 @@ export const SERVICES: ServiceDetail[] = [
       "/images/d4.jpg",
       "/images/d3.jpg",
     ],
-   
+
     features: [
       "Destination shoots in iconic global locations",
       "Cinematic storytelling with editorial styling and lighting",
@@ -118,7 +121,7 @@ export const SERVICES: ServiceDetail[] = [
   },
   {
     slug: "corporate",
-    title: "Corporate & Gala Events",
+    title: "Corporate ",
     subtitle: "Prestigious executive portraiture and large-scale event coverage.",
     heroImage: "/images/n2.jpg",
     tagline: "Refining corporate image with architectural precision and high-contrast clarity.",
@@ -129,7 +132,7 @@ export const SERVICES: ServiceDetail[] = [
       "Commercial license inclusion for worldwide publication",
     ],
     gallery: [
-      "/images/c4.jpg",
+      "/images/c15.JPG",
       "/images/c2.JPG",
       "/images/c3.JPG",
     ],
@@ -156,7 +159,7 @@ export const SERVICES: ServiceDetail[] = [
       "/images/m7.jpg",
       "/images/m3.jpg",
       "/images/m4.jpg",
-      "/images/m5.jpg", 
+      "/images/m5.jpg",
       "/images/m6.jpg",
     ],
     process: [
@@ -170,7 +173,7 @@ export const SERVICES: ServiceDetail[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "g1",
-    category: "traditional",
+    category: "Traditional",
     image: "/images/p8.jpg",
   },
   {
@@ -190,18 +193,18 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "g5",
-    category: "Maternity",
+    category: "Maternity & Baby Photography",
     image: "/doc/m1.jpg",
   },
   {
     id: "g6",
-    category: "Corporate",
+    category: "Interior",
     image: "/images/c2.JPG",
   },
   {
     id: "g7",
-    category: "Corporate",
-    image: "/images/c4.jpg",
+    category: "Interior",
+    image: "/images/c3.JPG",
   },
   {
     id: "g8",
@@ -219,80 +222,100 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: "/doc/t3.jpg",
   },
 
-    {
+  {
     id: "g11",
     category: "Pre-Wedding",
     image: "/doc/p4.jpg",
   },
-    {
+  {
     id: "g12",
     category: "Pre-Wedding",
     image: "/doc/p5.jpg",
   },
-    {
+  {
     id: "g13",
     category: "Pre-Wedding",
     image: "/doc/p6.jpg",
   },
-      {
+  {
     id: "g14",
     category: "Pre-Wedding",
     image: "/doc/p7.jpg",
   },
-      {
+  {
     id: "g15",
     category: "Pre-Wedding",
     image: "/doc/p8.jpg",
   },
-    {
+  {
     id: "g16",
     category: "Traditional",
     image: "/doc/t4.jpg",
   },
-    {
+  {
     id: "g17",
     category: "Traditional",
     image: "/doc/t5.jpg",
   },
-    {
+  {
     id: "g18",
     category: "Traditional",
     image: "/doc/t6.png",
   },
-    {
+  {
     id: "g19",
     category: "Traditional",
     image: "/doc/t7.jpg",
   },
-    {
+  {
     id: "g20",
     category: "Traditional",
     image: "/doc/t8.jpg",
   },
-      {
+  {
     id: "g21",
-    category: "Maternity",
+    category: "Maternity & Baby Photography",
     image: "/images/m1.jpg",
   },
-      {
+  {
     id: "g22",
-    category: "Maternity",
-    image: "/doc/m3.jpg",
+    category: "Maternity & Baby Photography",
+    image: "/images/m10.JPG",
   },
-      {
+  {
     id: "g23",
-    category: "Maternity",
+    category: "Maternity & Baby Photography",
     image: "/doc/m2.jpg",
   },
-       {
+  {
     id: "g24",
-    category: "Maternity",
-    image: "/doc/m8.jpg",
+    category: "Maternity & Baby Photography",
+    image: "/images/m11.JPG",
   },
-       {
+  {
     id: "g26",
-    category: "Maternity",
+    category: "Maternity & Baby Photography",
     image: "/doc/m6.jpg",
+  },
+  {
+    id: "g27",
+    category: "Maternity & Baby Photography",
+    image: "/images/hero5.jpg",
+  },
+  {
+    id: "g28",
+    category: "Interior",
+    image: "/images/c5.JPG",
+  },
+  {
+    id: "g29",
+    category: "Interior",
+    image: "/images/c6.jpg",
+  },
+  {
+    id: "g30",
+    category: "Interior",
+    image: "/images/c7.jpg",
   },
 ];
 
@@ -304,18 +327,18 @@ export const TESTIMONIALS = [
 
   {
     quote: "The team at Sreeram Creations is exceptional. They captured our wedding with such artistry and professionalism. Every photo tells a story, and we are thrilled with the results.",
-        author: "PTR academy",
+    author: "PTR academy",
 
   },
   {
     quote: "We are extremely happy with the wedding photography. The team captured every special moment so beautifully and naturally. The photos are very clear, full of emotions, and perfectly highlight the important rituals as well as candid memories. The creativity, professionalism, and patience shown throughout the event were truly impressive. These pictures will be a lifetime treasure for us, and we are very thankful for the wonderful work done.",
     author: "Nikhanjan Reddy",
   },
-    {
-    quote: "Thankyou so much Sreeram Creations for capturing my big day so beautifully, The Team is so friendly and talented, the output is clean, creative and amazing.I wish to enjoy your service on many occasions in the future.Team work is truly recommended for the best photography and editing.", 
+  {
+    quote: "Thankyou so much Sreeram Creations for capturing my big day so beautifully, The Team is so friendly and talented, the output is clean, creative and amazing.I wish to enjoy your service on many occasions in the future.Team work is truly recommended for the best photography and editing.",
     author: "yadu vamsi",
   },
-      {
+  {
     quote: "We are extremely happy with the wedding photography. The team beautifully captured every special moment with creativity, professionalism, and patience, giving us clear, emotional photos that will remain a lifetime treasure",
     author: "Nikhanjan Reddy",
   },

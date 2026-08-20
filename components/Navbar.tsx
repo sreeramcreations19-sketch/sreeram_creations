@@ -21,13 +21,20 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-[#f9f9f9]/90 backdrop-blur-md border-b border-[#cfc4c5]/30">
       <div className="max-w-[1440px] mx-auto px-6 md:px-20 py-4 flex items-center justify-between">
         {/* Brand Logo */}
-        <Link href="/" className="group flex flex-col">
-          <span className="font-serif text-2xl md:text-3xl text-black tracking-tight group-hover:text-[#735b24] transition-colors duration-300">
-            Sreeram Creations
-          </span>
-          <span className="text-[10px] uppercase tracking-[0.25em] text-[#7e7576] font-medium">
-            Luxury Visual Art
-          </span>
+        <Link href="/" className="group flex items-center gap-2">
+          <img
+            src="/images/logo-emblem-black.png"
+            alt="Sreeram Creations Logo"
+            className="w-14 h-14 md:w-16 md:h-16 object-contain transition-transform duration-300 group-hover:scale-105 shrink-0 -mt-1 md:-mt-1.5"
+          />
+          <div className="flex flex-col justify-center">
+            <span className="font-serif text-2xl md:text-3xl text-black tracking-tight group-hover:text-[#735b24] transition-colors duration-300 leading-none mb-1">
+              Sreeram Creations
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#7e7576] font-medium leading-none">
+              Make Your Moments Magical
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -41,11 +48,10 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-xs uppercase tracking-[0.15em] font-semibold transition-colors duration-300 relative py-1 ${
-                  isActive
+                className={`text-xs uppercase tracking-[0.15em] font-semibold transition-colors duration-300 relative py-1 ${isActive
                     ? "text-black font-bold"
                     : "text-[#4c4546] hover:text-[#735b24]"
-                }`}
+                  }`}
               >
                 {link.name}
                 {isActive && (
@@ -90,11 +96,10 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block text-sm uppercase tracking-[0.15em] py-2 border-b border-[#eeeeee] ${
-                  isActive
+                className={`block text-sm uppercase tracking-[0.15em] py-2 border-b border-[#eeeeee] ${isActive
                     ? "text-black font-bold text-[#C8A96A]"
                     : "text-[#4c4546]"
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>

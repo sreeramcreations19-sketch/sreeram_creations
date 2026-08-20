@@ -8,8 +8,8 @@ const CATEGORIES = [
   "All",
   "Pre-Wedding",
   "Traditional",
-  "Maternity",
-  "Corporate",
+  "Maternity & Baby Photography",
+  "Interior",
 ];
 
 export default function GalleryGrid() {
@@ -19,25 +19,46 @@ export default function GalleryGrid() {
   const filteredItems =
     activeCategory === "All"
       ? GALLERY_ITEMS
-      : GALLERY_ITEMS.filter((item) => item.category === activeCategory);
+      : GALLERY_ITEMS.filter((item) => {
+          const target = activeCategory.trim().toLowerCase();
+          const itemCat = item.category.trim().toLowerCase();
+          if (itemCat === target) return true;
+          if (target.includes("maternity") && itemCat.includes("maternity")) return true;
+          if (target.includes("traditional") && itemCat.includes("traditional")) return true;
+          if (target.includes("pre-wedding") && itemCat.includes("pre-wedding")) return true;
+          if (target.includes("interior") && itemCat.includes("interior")) return true;
+          return false;
+        });
+
+  const handleCategoryClick = (cat: string) => {
+    setActiveCategory(cat);
+  };
 
   return (
     <div className="w-full space-y-10">
       {/* Category Filter Buttons */}
       <div className="flex flex-wrap items-center justify-center gap-3 border-b border-[#eeeeee] pb-6">
-        {CATEGORIES.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
-            className={`px-5 py-2 text-xs uppercase tracking-[0.15em] font-semibold transition-all duration-300 ${
-              activeCategory === cat
-                ? "bg-[#000000] text-white shadow-md"
-                : "bg-[#ffffff] text-[#4c4546] hover:bg-[#eeeeee] border border-[#eeeeee]"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
+        {CATEGORIES.map((cat) => {
+          const isActive = activeCategory.trim().toLowerCase() === cat.trim().toLowerCase();
+          return (
+            <button
+              key={cat}
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                handleCategoryClick(cat);
+              }}
+              className={`px-5 py-2 text-xs uppercase tracking-[0.15em] font-semibold cursor-pointer select-none transition-all duration-200 active:scale-95 ${
+                isActive
+                  ? "bg-[#000000] text-white shadow-md border border-black"
+                  : "bg-[#ffffff] text-[#4c4546] hover:bg-[#eeeeee] border border-[#eeeeee] hover:text-black"
+              }`}
+            >
+              {cat}
+            </button>
+          );
+        })}
       </div>
 
       {/* Grid of gallery cards */}
@@ -52,6 +73,8 @@ export default function GalleryGrid() {
               <img
                 src={item.image}
                 alt={item.title ?? item.category}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">

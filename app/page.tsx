@@ -1,13 +1,13 @@
 import Link from "next/link";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import ServiceCard from "@/components/ServiceCard";
-import { SERVICES, TESTIMONIALS, GALLERY_ITEMS } from "@/data/content";
-import { ArrowRight, Star, ShieldCheck, Camera, Sparkles } from "lucide-react";
+import GalleryGrid from "@/components/GalleryGrid";
+import { SERVICES, TESTIMONIALS } from "@/data/content";
+import { ArrowRight, Sparkles } from "lucide-react";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export default function HomePage() {
   const featuredServices = SERVICES.slice(0, 3);
-  const highlightGallery = GALLERY_ITEMS.slice(0, 6);
   const youtubeVideos = [
     "https://www.youtube.com/embed/ZwQgd00A0vc?si=PgT_aNYgSI9L2J92",
     "https://www.youtube.com/embed/Z-ATU5dclaU?si=cjWMteGtzRxUVF_w",
@@ -51,7 +51,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
             <span className="text-xs uppercase tracking-[0.25em] text-[#735b24] font-semibold block">
-              Legacy of Excellence
+              The Story That Started It All
             </span>
             <h2 className="font-serif text-4xl md:text-5xl text-black leading-tight">
               Capturing the soul behind the lens.
@@ -73,14 +73,14 @@ export default function HomePage() {
           <div className="relative">
             <div className="aspect-[4/5] bg-[#eeeeee] overflow-hidden border border-[#eeeeee]">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSTaCeRrkqEJCRxwwAa7MK5GZnfGyuLeC5HFs6O3sP-IUjVFd9PHadK41NfbjKNnnDNCDaYpvgKk3GAij6EvGfFs5Ue9k4ONtdfKl42iRPy-Om59lTsgbT8Z2Lxbzw77Lbm_oLCWYFHkgD1jasIexrAYmFmWrOs4STYFfGH4gcjba-1q5-q8eZ4NYyEl4pqvfL1FKbV-xpT3JhfauW1yXcRoXXJ2Q1t9YGtuOWUNWUqxj_ElEgXiB_5w"
+                src="/images/s1.jpg"
                 alt="Studio Craftsmanship"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-8 -left-8 w-48 h-48 border-[10px] border-[#f9f9f9] shadow-xl hidden md:block overflow-hidden bg-black">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuATDb1TmDg-LyNDfFECvRvLD8_DDlmjnfG1Gz4NRK-WTGBh3R0HKKKMEAYBvdhGGMKhK7nTJjuYtC_CzHeP1kLkWapRk5eYKYNAc2J_E7ABpbMzoDBXm8ZS9joamm5SpjjjijQRGm3-5R_8x0fYTyq7koLjfJRjsljy47fSbUNxku4inXCZPJLkvscalF7140ep2jAx_NwOIej0IlqA8FGq9d1yGfDO4uimdvd0CWs6LYrasI8CGcgEuQ"
+                src="/images/s2.jpg"
                 alt="Lens Craft Detail"
                 className="w-full h-full object-cover"
               />
@@ -115,7 +115,7 @@ export default function HomePage() {
               href="/services"
               className="inline-flex items-center gap-2 bg-black text-white hover:bg-[#735b24] px-9 py-4 text-xs uppercase tracking-[0.15em] font-semibold transition-colors duration-300"
             >
-              <span>Explore All 5 Specialties</span>
+              <span>Explore All Specialties</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -130,7 +130,7 @@ export default function HomePage() {
               Curated Portfolio
             </span>
             <h2 className="font-serif text-4xl text-black">
-              Artistic Legacy Showcase
+              Artistic Showcase
             </h2>
           </div>
           <Link
@@ -142,28 +142,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {highlightGallery.map((item) => (
-            <div
-              key={item.id}
-              className="group relative aspect-[4/3] bg-[#eeeeee] overflow-hidden border border-[#eeeeee]"
-            >
-              <img
-                src={item.image}
-                alt={item.title ?? item.category}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <span className="text-[10px] uppercase tracking-[0.2em] text-[#C8A96A] font-semibold mb-1">
-                  {item.category}
-                </span>
-                <h3 className="font-serif text-lg text-white font-medium">
-                  {item.title ?? item.category}
-                </h3>
-              </div>
-            </div>
-          ))}
-        </div>
+        <GalleryGrid />
       </section>
 
       {/* Testimonials & Praise */}
@@ -222,7 +201,7 @@ export default function HomePage() {
             <Sparkles className="w-4 h-4" /> Reserve Your Dates
           </span>
           <h2 className="font-serif text-4xl md:text-5xl text-black">
-            Begin Your Legacy Story Today
+            Begin Your  Story Today
           </h2>
           <p className="text-xs md:text-sm text-[#4c4546] max-w-xl mx-auto leading-relaxed">
             We limit our annual bookings to maintain maximum artistic focus and exclusivity for each client.

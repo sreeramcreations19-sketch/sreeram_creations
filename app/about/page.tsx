@@ -26,7 +26,7 @@ export default function AboutPage() {
             About Sreeram Creations
           </span>
           <h1 className="font-serif text-4xl md:text-6xl tracking-tight">
-            Crafting Visual Legacies Since 2018
+            Crafting Visual Stories Since 2018
           </h1>
           <p className="text-xs md:text-sm text-[#cfc4c5] font-light leading-relaxed max-w-xl mx-auto uppercase tracking-[0.15em] pt-2">
             When Passion Becomes a Profession.
@@ -45,7 +45,7 @@ export default function AboutPage() {
               A journey fueled by passion, purpose, and perseverance.
             </h2>
             <p className="text-xs md:text-sm text-[#4c4546] leading-relaxed">
-              Hi, I'm <strong>Sindhu</strong>, a B.C.A. graduate from Andhra Pradesh and the founder of Sreeram Creations, with a deep passion for visual storytelling. My journey began in 2006 when I started learning Photoshop and designing albums for family and friends. What began as a simple creative interest gradually evolved into a lifelong passion for photography, photo editing, and cinematic filmmaking.
+              Hi, I'm <strong>SindhuAbhi</strong>, a B.C.A. graduate from Andhra Pradesh and the founder of Sreeram Creations, with a deep passion for visual storytelling. My journey began in 2006 when I started learning Photoshop and designing albums for family and friends. What began as a simple creative interest gradually evolved into a lifelong passion for photography, photo editing, and cinematic filmmaking.
             </p>
             <p className="text-xs md:text-sm text-[#4c4546] leading-relaxed">
                  As life presented new challenges, that passion transformed into a fulfilling profession. I began working with small organizations, photo studios, charities, and temples, steadily building my experience and refining my craft. Since 2018, Sreeram Creations has proudly grown into a dedicated team specializing in wedding photography, event coverage, professional photo and video editing, and timeless story films—capturing memories that families will cherish for generations.

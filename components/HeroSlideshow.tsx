@@ -32,8 +32,16 @@ export default function HeroSlideshow() {
           className={`hero-slideshow-item ${
             idx === currentIndex ? "active" : ""
           }`}
-          style={{ backgroundImage: `url('${slide.image}')` }}
-        />
+        >
+          <img
+            src={slide.image}
+            alt={slide.title}
+            loading={idx === 0 ? "eager" : "lazy"}
+            decoding="async"
+            fetchPriority={idx === 0 ? "high" : "auto"}
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
       ))}
 
       {/* Dark gradient overlay for luxury contrast */}

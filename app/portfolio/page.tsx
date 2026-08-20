@@ -22,13 +22,13 @@ export default function PortfolioPage() {
       <section className="bg-[#1a1c1c] text-white py-24 px-6 md:px-20 text-center">
         <div className="max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase tracking-[0.3em] text-[#C8A96A] font-semibold flex items-center justify-center gap-1.5">
-            <Sparkles className="w-4 h-4" /> Fine Art Vault
+            <Sparkles className="w-4 h-4" /> The Story Vault
           </span>
           <h1 className="font-serif text-4xl md:text-6xl tracking-tight">
             Portfolio Gallery
           </h1>
           <p className="text-xs md:text-sm text-[#cfc4c5] font-light leading-relaxed max-w-xl mx-auto uppercase tracking-[0.15em] pt-2">
-            A curated anthology of royal ceremonies, destination pre-weddings, and high-fashion editorial portraiture.
+            Discover our finest work and explore a collection of weddings, pre-weddings, maternity, birthdays, and life’s many celebrations.
           </p>
         </div>
       </section>

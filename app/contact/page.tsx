@@ -58,7 +58,7 @@ export default function ContactPage() {
             Reserve Your Dates
           </h1>
           <p className="text-xs md:text-sm text-[#cfc4c5] font-light leading-relaxed max-w-xl mx-auto uppercase tracking-[0.15em] pt-2">
-            Inquire regarding date availability, international destination logistics, and bespoke studio quotes.
+            Inquire regarding date availability and destination logistics.
           </p>
         </div>
       </section>
@@ -70,13 +70,13 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-10">
             <div>
               <span className="text-xs uppercase tracking-[0.25em] text-[#735b24] font-semibold block mb-2">
-                Concierge Desk
+                Let’s Connect
               </span>
               <h2 className="font-serif text-3xl text-black">
                 We Would Love to Hear From You
               </h2>
               <p className="text-xs text-[#4c4546] leading-relaxed mt-4">
-                To preserve the highest level of craftsmanship and individual focus, Sreeram Creations accepts a limited number of commissions each calendar year.
+                Share your vision with us.Together, we’ll create timeless photographs and cinematic memories you’ll cherish forever.
               </p>
             </div>
 
