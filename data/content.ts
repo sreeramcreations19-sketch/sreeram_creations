@@ -69,7 +69,7 @@ export const SERVICES: ServiceDetail[] = [
     slug: "pre-wedding",
     title: "Pre-Wedding Photography",
     subtitle: "Cinematic romance in breathtaking global destinations.",
-    heroImage: "/images/PBR00927.jpg",
+    heroImage: "/images/PBR00927.JPG",
     tagline: "Where love stories meet architectural grandeur and high-fashion aesthetics.",
     description: "Our pre-wedding shoots are conceived as bespoke fashion editorials. We curate exotic locations, styling palettes, and lighting setups to frame your bond in timeless elegance.",
     gallery: [
